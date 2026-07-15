@@ -1,0 +1,17 @@
+{
+  "project": "multi-tenant-ad-optimizer",
+  "description": "Convex backend for multi-agent ad campaign optimization",
+  "tables": {
+    "clients": "Client/agency account with platform connections",
+    "campaigns": "Synced ads from Meta/Google, indexed by clientId and platform",
+    "agentRuns": "Each cron-triggered optimization cycle",
+    "agentLogs": "Append-only audit trail of agent decisions",
+    "approvals": "Human-in-the-loop actions awaiting review",
+    "onboarding": "Client onboarding state machine"
+  },
+  "setup": {
+    "install": "npm install convex",
+    "dev": "npx convex dev",
+    "deploy": "npx convex deploy"
+  }
+}

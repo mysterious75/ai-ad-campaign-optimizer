@@ -1,0 +1,13 @@
+version: "3.9"
+
+services:
+  agent-pipeline:
+    build: .
+    env_file:
+      - .env
+    environment:
+      - LOG_LEVEL=INFO
+    restart: unless-stopped
+    # Run hourly via cron-like restart
+    # Or deploy as a long-running service that runs on schedule
+    command: python -m agents.main
