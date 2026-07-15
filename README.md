@@ -4,6 +4,8 @@ Multi-agent AI system that autonomously analyzes Meta Ads and Google Ads campaig
 
 Built for agencies running paid media at scale. The AI pipeline runs on cron, logs every decision to Convex, and surfaces insights in a client-ready portal.
 
+![Dashboard Screenshot](screenshot.png)
+
 ## Architecture
 
 ```
